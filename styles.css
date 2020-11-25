@@ -1,9 +1,118 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* base styles */
 body {
   font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* utility */
+.heading {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: .7rem;
+}
+
+.input-field {
+  padding: 10px 20px;
+  margin-right: 1.2rem;
+}
+
+.btn {
+  background: none;
+  border: 1px black solid;
+  padding: 15px 20px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+  transition: .5s;
+}
+
+.btn:hover {
+  background: #242424;
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  background: #07689f;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  opacity: .98;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  margin-right: auto;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: #fff;
+  margin: auto 20px;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+/* banner */
+.banner {
+  
+}
+
+.banner-img {
+  width: 100%;
+}
+/* about */
+
+/* booking */
+.booking {
+  background: #ffc93c;
+}
+.booking-form {
+  text-align: center;
+}
+/* location */
+.location {
+  text-align: center;
+}
+
+/* contact */
+.contact {
+  background: #40a8c4;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+footer {
+  padding: 15px;
+  background: #a2d5f2;
+  color: #fff;
+  text-align: center;
 }
