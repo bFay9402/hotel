@@ -8,13 +8,12 @@
 /* base styles */
 body {
   font-family: 'Noto Sans', sans-serif;
+  color: #424242;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 70%;
   margin: 0 auto;
+  max-width: 70%;
 }
 
 /* utility */
@@ -28,11 +27,14 @@ body {
 .input-field {
   padding: 10px 20px;
   margin-right: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #616161;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .btn {
-  background: none;
-  border: 1px black solid;
+  border-radius: 5px;
   padding: 15px 20px;
   cursor: pointer;
   outline: none;
@@ -42,8 +44,7 @@ body {
 }
 
 .btn:hover {
-  background: #242424;
-  color: #fff;
+  filter: brightness(110%);
 }
 
 /* navbar */
@@ -80,39 +81,98 @@ body {
 
 /* banner */
 .banner {
-  
+  height: 100vh;
 }
 
 .banner-img {
+  height: 100vh;
   width: 100%;
 }
+
 /* about */
+.about {
+  background: #a2d5f2;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 /* booking */
 .booking {
   background: #ffc93c;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .booking-form {
   text-align: center;
 }
+
+.book {
+  color: #fff;
+  background: #40a8c4;
+  border: solid 1px #40a8c4;
+}
+
 /* location */
 .location {
   text-align: center;
+  background: #a2d5f2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /* contact */
 .contact {
   background: #40a8c4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 2rem;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.input-contact {
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #616161;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.text-field {
+  width: 45%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #616161;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 /* footer */
 footer {
   padding: 15px;
-  background: #a2d5f2;
+  background: #07689f;
   color: #fff;
   text-align: center;
 }
+
+.icons {
+  width: 20%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.icon {
+  color: #fff;
+}
+
+.submit {
+  border: 1px solid #ffc93c;
+  color: #424242;
+  background: #ffc93c;
+}
+/* colors */
+/* https://colorhunt.co/palette/201676 */
